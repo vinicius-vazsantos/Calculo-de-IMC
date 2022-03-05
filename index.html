@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora - IMC</title>
+
+	<!--------------- CSS Projeto --------------->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!--------------- Bootstrap CSS --------------->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!--------------- Bootstrap JS --------------->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		.fundo_imc {
+			background-image: url('img/fundo_imc.jpg');
+			background-size: cover;
+		}
+	</style>
+</head>
+<body class="fundo_imc">
+	<div class="container">
+		<div class="row justify-content-center">
+			<!--------------- Início Jumbotron --------------->
+			<div class="col-md-5 col-xl-6 jumbotron mt-5">
+				<h1 class="display-4 d-flex justify-content-center">Saúde para todos</h1>
+				<hr class="my-2">
+				<p class="lead text-center">Este formulário calcula o IMC (Índice de massa corporal) com base na altura e peso fornecido, expressando o resultado em kg/m².</p>
+				<hr class="my-2">
+
+				<form><!--------------- Início Campo Fomulário --------------->
+					<div>
+						<!--------------- Início Input Nome --------------->
+		         		<div class="form-group">
+				            <label for="validationCustomUsername">Nome</label>
+				            <input class="form-control" type="text"  id="nome" placeholder="Digite seu nome">
+			          	</div><!--------------- Fim Input Nome --------------->
+
+			          	<!--------------- Início Input Altura --------------->
+			            <div class=" form-group">
+			                <label for="altura">Altura</label>
+			                <input class="form-control" type="number" id="altura" placeholder="Digite sua altura em metros - Ex: 1,5m">
+			            </div><!--------------- Fim Input Altura --------------->
+
+			            <!--------------- Início Input Peso --------------->
+			            <div class="form-group">
+			                <label for="peso">Peso</label>
+			                <input class="form-control" type="number" id="peso" placeholder="Digite seu peso em Kg">
+			            </div><!--------------- Fim Input Peso --------------->	
+
+			            <!--------------- Início Botão Calcular --------------->
+			            <div class="lead mt-3 d-flex justify-content-center">
+						  	<button class="btn btn-primary btn-lg" href="#" role="button">Calcular</button>
+						</div><!--------------- Fim Botão Calcular --------------->
+					</div>
+				</form><!--------------- Fim Campo Fomulário --------------->
+				
+				<hr class="my-2">
+			</div><!--------------- Fim Jumbotron --------------->
+		</div>		
+	</div>
+</body>
+</html>
