@@ -80,7 +80,7 @@
 								    <div class="modal-body">
 								    	<div class="d-flex justify-content-center">
 								        	<img class="position-absolute w-25 align-self-center"  id ='imagens_imc'>
-								        	<img class="w-50"  src="../Calculo-de-IMC/img/ball.gif">	
+								        	<img class="w-50"  src="img/ball.gif">	
 								    	</div>
 								    	<p class="text-center" id="resultado"></p>
 								    	<p class="text-center h1" id="valor"></p>
@@ -145,31 +145,31 @@
 	        	// Classificação de massa coporal de acordo com altura e peso fornecido.
 	        	if (imc < 17) {
 	        		classificacao = 'MAGREZA';
-                	img.src = '../Calculo-de-IMC/img/abaixo_17.png';
+                	img.src = 'img/abaixo_17.png';
                	
 	        	} else if (imc >= 17 && imc <=18.49) {
 	        		classificacao = 'ABAIXO DO PESO';
-                	img.src = '../Calculo-de-IMC/img/entre_17.png';
+                	img.src = 'img/entre_17.png';
                 	
 	        	} else if (imc >= 18.50 && imc <= 24.99) {
 	        		classificacao = 'PESO NORMAL';
-                	img.src = '../Calculo-de-IMC/img/entre_18.png';
+                	img.src = 'img/entre_18.png';
                 	
 	        	} else if (imc >= 25 && imc <= 29.99) {
 	        		classificacao = 'SOBREPESO';
-                	img.src = '../Calculo-de-IMC/img/entre_25.png';
+                	img.src = 'img/entre_25.png';
 
 	        	} else if (imc >= 30 && imc <= 34.99) {
 	        		classificacao = 'OBESIDADE GRAU I';
-                	img.src = '../Calculo-de-IMC/img/entre_30.png';
+                	img.src = 'img/entre_30.png';
 
 	        	} else if (imc >= 35 && imc <= 39.99) {
 	        		classificacao = 'OBESIDADE GRAU II';
-                	img.src = '../Calculo-de-IMC/img/entre_35.png';
+                	img.src = 'img/entre_35.png';
                 
 	        	} else {
 	        		classificacao = 'OBESIDADE GRAU III';                	
-                	img.src = '../Calculo-de-IMC/img/entre_40.png';	
+                	img.src = 'img/entre_40.png';	
 	        	}
 	        	titulo.innerHTML = `${classificacao}`;
 	        	valor.innerHTML = `${imc} Kg/m²`;
@@ -194,7 +194,7 @@
 							    <div class="modal-body">
 							    	<p class="text-center font-weight-bold">Preencha todos os campos!</p>
 							    	<div class="mx-auto text-center">
-							    		<img class="w-50" src="../Calculo-de-IMC/img/error-img.gif">
+							    		<img class="w-50" src="img/error-img.gif">
 							    	</div>
 							    </div><!--------------- Fim Corpo Modal --------------->  
 					    	</div>
